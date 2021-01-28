@@ -1,0 +1,41 @@
+.header {
+    padding: 160px;
+    text-align: center;
+    background: #1ABC9C;
+    color: white;
+    font-size: 30px;
+}
+
+
+body {
+    background-color: #fafafa;
+    color: black;
+    font-family: "Times New Roman", serif;
+}
+
+h1 {
+    color: black;
+    font-family: "Times New Roman", serif;
+}
+
+
+
+.navbar-light{
+    background-color: lightskyblue;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: skyblue;
+    color:#fafafa;
+    height: 30px;
+    font-size: 85%;
+}
+
+.content-wrapper {
+    padding-bottom: 60px;
+}

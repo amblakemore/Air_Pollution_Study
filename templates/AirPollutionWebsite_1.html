@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Home</title>
+        <meta charset="UTF-8"/>
+
+    <!--Bootstrap and CSS-->
+        <link type="text/css" rel="stylesheet" href="styles.css"/>
+       
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+        <link rel="stylesheet" href="../static/css/style.css">
+        <script src="../static/js/logic.js"></script>
+        <script src="https://d3js.org/d3.v6.min.js"></script>
+    </head>   
+
+   
+<!--Navbar-->
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="/" >ABOUT</a>
+        <div class="collapse navbar-collapse" id="navbarSupportContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href ="AirPollutionWebsite_years.html">Years</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/plots">VISUALIZATIONS</a>
+                </li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+
+       <!--Container-->
+    
+    <div class ="container content-wrapper">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="thumbnail">
+                    <img src="../static/css/air_quality_top_banner.jpg" width ="100%">
+
+                </div>
+
+
+            </div>
+            <div class="col-md-8">
+                <div class="data">
+                    <h3 class="header">Data Sources</h3>
+                    <li><a href="https://www.airnow.gov/aqi/aqi-basics/">Air Now <i class="fas fa-external-link-alt"></i></a></li>
+                    <li><a href="https://aqs.epa.gov/aqsweb/airdata/download_files.html#AQS/">AQS <i class="fas fa-external-link-alt"></i></a></li>
+                    <li><a href="https://aqs.epa.gov/aqsweb/documents/data_api.html">AQS Data <i class="fas fa-external-link-alt"></i></a></li>
+                </div>
+            </div>
+        </div>
+
+    <div class="col-md-12">
+
+
+        <div class="header">
+            <h3>Air Pollution in the United States</h1>
+        </div>
+        <div class="col-md-12">
+            <p>Air pollution refers to the release of pollutants into the air that are detrimental to human health and the planet as a whole. It can cause diseases, allergies and even death to humans; it may also cause harm to other living organisms such as animals and food crops, and may damage the natural or built environment. Both human activity and natural processes can generate air pollution.
+            </p>
+            <br>
+            <p>Air quality is measured with the Air Quality Index. The AQI works like a thermometer that runs from 0 to 500 degrees. However, instead of showing changes in the temperature, the AQI is a way of showing changes in the amount of pollution in the air. Air quality is a measure of how clean or polluted the air is</p>
+            <br>
+            <p>Air pollutants can be divided into three groups:</p>
+            <p><ul>
+                    <li><strong> Criteria pollutants </strong> - air pollutants that have been regulated and are used as indicators of air quality.</li>
+                    <li><Strong> Air toxics </Strong> - aseous, aerosol or particualte pollutants that are present in the air in low concentrations with characteristics such as toxicity or persistence so as to be hazard to human, plant or animal life.</li>
+                    <li><Strong> Biological pollutants </Strong> - arise from pollutants that are caused naturally and without human participation</li>
+                </ul>
+            <br>
+            </p>
+
+
+
+            <div class="container">
+                <h1>Air Pollution in the United States</h1>
+                <div class="row">
+                    <div class="col-md-2">
+                      <div class="well">
+                        <h5>State :</h5>
+                        <select id="state" onchange="optionChanged(this.value)"></select>
+                      </div>
+                    </div>
+                      
+                <!-- <div class="row"> -->
+                      <div class="col-md-2">
+                        <div class="well">
+                          <h5>Year :</h5>
+                          <select id="year" onchange="optionChanged(this.value)"></select>
+                          </div>
+                        </div>
+                </div>
+            </div>
+
+        </main>
+    </body>
+</html>
